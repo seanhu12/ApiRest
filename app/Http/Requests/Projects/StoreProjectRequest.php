@@ -26,10 +26,10 @@ class StoreProjectRequest extends FormRequest
         return [
             //
             'name'=>'required',
-            'type'=>'required',
-            'code'=>'required',
-            'phase'=>'required',
-            'status'=>'required'
+//            'type'=>'required',
+//            'code'=>'required',
+//            'phase'=>'required',
+//            'status'=>'required'
         ];
     }
 }

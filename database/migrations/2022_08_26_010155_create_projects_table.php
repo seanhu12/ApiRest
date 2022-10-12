@@ -16,10 +16,10 @@ class CreateProjectsTable extends Migration
         Schema::create('projects', function (Blueprint $table) {
             $table->id();
             $table->string('name', 255);
-            $table->string('type', 50);
-            $table->string('code', 10);
-            $table->string('phase', 30);
-            $table->string('status', 30);
+            $table->string('type', 50)->nullable();;
+            $table->string('code', 10)->nullable();;
+            $table->string('phase', 30)->nullable();;
+            $table->string('status', 30)->nullable();;
             $table->text('problem_identified')->nullable();
             $table->text('general_objective')->nullable();
             $table->date('start_date')->nullable();

@@ -26,7 +26,6 @@ class UpdateProjectRequest extends FormRequest
         return [
             //
             'name' => 'required',
-            'type' => 'required',
         ];
     }
 }
