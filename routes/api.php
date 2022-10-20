@@ -1,6 +1,9 @@
 <?php
 
 use App\Http\Controllers\Projects\ProjectController;
+use App\Http\Controllers\product\ProductController;
+use App\Http\Controllers\Mesa\MesaController;
+use App\Http\Controllers\Boleta\BoletaController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -20,3 +23,7 @@ use Illuminate\Support\Facades\Route;
 //});
 
 Route::resource('projects',ProjectController::class);
+Route::resource('products',productController::class);
+Route::resource('mesas',MesaController::class);
+Route::resource('boletas',BoletaController::class);
+
